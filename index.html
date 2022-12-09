@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	  <title>PopUp</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!--   CSS file included -->
+		<link rel="stylesheet" type="text/css" href="style.css">		
+	</head>
+
+	<body onload="popUp()" onclick="closePopUp()" onkeypress="escClose()">
+
+		  <div id="popUp">
+		  	  <div id="popUpContent">		  	  	   
+		  	  	   <div id="popUpImage">
+		  	  	   	   <p id="closePopUp" onclick="closePopUp()">X</p>
+		  	  	   	  <a href="http://neeminfosys.com"> <h2>Admission Open for ADIT.</h2></a>
+		  	  	   	   <a href="http://neeminfosys.com"><img src="adit.jpeg"></a>
+		  	  	   </div>
+		  	  </div>
+
+		  </div>
+	</body>
+
+	<script type="text/javascript">
+		 function popUp(){
+		 	document.getElementById('popUp').style.display="block";
+		 }
+
+		 function closePopUp(){
+		 	document.getElementById('popUp').style.display = "none";
+		 }
+
+		 function escClose(evt){
+          if (evt.key == 'Escape') {
+          // Escape key pressed
+           props.closePopUp();
+           }
+          };
+
+
+	</script>
+</html>
